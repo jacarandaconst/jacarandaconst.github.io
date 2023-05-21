@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Quality Service is Our Business | Building Equipment Contractors | Specialty Trade Contractors">
+    <meta name="keywords" content="">
+    <meta name="author" content="Sudharshan Reddy Karnati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Google_Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font_Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="files/css/owl.carousel.min.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="files/css/stylesheet.css">
+    <title>Jacaranda Const Inc.</title>
+    <link rel=icon href="files/images/building-icon.png" sizes="30x30" type="image/png">
+    <style>
+        /*-- Contact --*/
+        .jumbotron-heading {
+            color: #ffffff;
+            font-size: 28px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .contact-form {
+            width: 100%;
+            padding: 80px 0;
+        }
+
+        .contact-form .info-box {
+            color: #444444;
+            text-align: center;
+            -webkit-box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+            box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+            padding: 20px 0 30px 0;
+        }
+
+        .contact-form .info-box a {
+            color: #444444;
+        }
+
+        .contact-form .info-box i {
+            font-size: 32px;
+            color: #f15f22;
+            border-radius: 50%;
+            padding: 8px;
+            border: 2px dotted #fef5f4;
+        }
+
+        .contact-form .info-box h3 {
+            font-size: 18px;
+            color: #144676;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .contact-form .info-box p {
+            font-weight: 500;
+            padding: 0;
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .contact-form .email-form {
+            -webkit-box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+            box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+            padding: 30px;
+        }
+
+        .contact-form .email-form .validate {
+            display: none;
+            color: red;
+            margin: 0 0 15px 0;
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        .contact-form .email-form .error-message {
+            display: none;
+            color: #fff;
+            background: #ed3c0d;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+        }
+
+        .contact-form .email-form .error-message br+br {
+            margin-top: 25px;
+        }
+
+        .contact-form .email-form .sent-message {
+            display: none;
+            color: #fff;
+            background: #18d26e;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+        }
+
+        .contact-form .email-form .loading {
+            display: none;
+            background: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .contact-form .email-form .loading:before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin: 0 10px -6px 0;
+            border: 3px solid #18d26e;
+            border-top-color: #eee;
+            -webkit-animation: animate-loading 1s linear infinite;
+            animation: animate-loading 1s linear infinite;
+        }
+
+        .contact-form .email-form input,
+        .contact-form .email-form textarea {
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            font-size: 14px;
+        }
+
+        .contact-form .email-form input::focus,
+        .contact-form .email-form textarea::focus {
+            background-color: #f15f22;
+        }
+
+        .contact-form .email-form input,
+        .contact-form .email-form textarea {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            padding: 12px 12px;
+        }
+
+        .contact-form .email-form button[type="submit"] {
+            background: #144676;
+            border: 0;
+            border-radius: 50px;
+            padding: 10px 24px;
+            color: #fff;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        .contact-form .email-form button[type="submit"]:hover {
+            background: #f15f22;
+        }
+
+        @-webkit-keyframes animate-loading {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animate-loading {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body onload="createCaptcha()">
+    <section id="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-4">
+                    <a class="navbar-brand" href="index.html"><img src="files/images/nav-logo.png" alt="JACARANDA CONST INC"></a>
+                </div>
+                <div class="col-md-9 col-8">
+                    <div class="header-infos">
+                        <div class="pull-left header-info-group days">
+                            <div class="header-info-icon pull-left text-center"><i class="fa fa-clock-o"></i></div>
+                            <div class="header-info-labels pull-left">
+                                <h3>Monday - Friday 09:00 - 19:00 </h3>
+                                <div class="clearfix"></div>
+                                <h5>Saturday and Sunday - CLOSED </h5>
+                            </div>
+                        </div>
+                        <div class="pull-left header-info-group">
+                            <div class="header-info-icon pull-left text-center"><i class="fa fa-phone"></i></div>
+                            <div class="header-info-labels pull-left">
+                                <h3><a href="tel:9044189734">9044189734</a></h3>
+                                <div class="clearfix"></div>
+                                <h5><a href="mailto:info@jacarandaconst.com">info@jacarandaconst.com</a></h5>
+                            </div>
+                        </div>
+                        <div class="pull-left header-info-group header-button">
+                            <div class="header-button-labels pull-left"><a href="contact-us.html" class="button-winona btn btn-medium">Inquiry</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Welcome to Jacaranda Const Inc.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">Company Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="residential-construction.html"><img src="files/images/residential-construction.png" alt=""><span>Residential Construction</span></a>
+                            <a class="dropdown-item" href="commercial-construction.html"><img src="files/images/commercial-construction.png" alt=""><span>Commercial Construction</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="remodeling.html">Remodeling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flooring.html">Flooring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interior-wood-work.html">Interior wood work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="contact-us">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">We're always <b>Happy to Help</b> <br> Get in touch with us today !</h1>
+            </div>
+        </section>
+        <section id="contact" class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="info-box mb-4">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <h3>Our Address</h3>
+                            <p>13114 Hello Darlin Dr Glen Saint Mary, FL, 32040-5136 United States</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-box  mb-4">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:info@jacarandaconst.com">info@jacarandaconst.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-box  mb-4">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:9044189734">9044189734</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.6185412783893!2d-82.26284268488081!3d30.219432981818933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ef5ed82e1b0125%3A0xfabf431782fc2ac!2s13114%20Hello%20Darlin%20Dr%2C%20Glen%20St%20Mary%2C%20FL%2032040%2C%20USA!5e0!3m2!1sen!2sin!4v1627323048925!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="contactUsForm" action="" method="post" role="form" class="email-form" onsubmit="contactUsValidateCaptcha()">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" minlength="6" maxlength="15" class="form-control" name="subject" id="subject" placeholder="Enter your phone number" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" class="form-control" name="message" id="message" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-control" id="captcha">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter Captcha" id="cpatchaTextBox"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <p class="alert alert-success" id="contactusmessageid" style="display:none;"></p>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Call To Action Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-left text-lg-start" style="align-self: center;">
+                    <h3>WE ARE READY TO BUILD YOUR DREAM TELL US MORE ABOUT YOUR PROJECT</h3>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="tel:9044189734">Call To Action</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <img src="files/images/logo.png" alt="">
+                            <p>Get Wilmër and discover streamlined website construction today! Powerful elements</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="index.html">Home</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="about-us.html">About us</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>                            
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="residential-construction.html">Residential Construction</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="commercial-construction.html">Commercial Construction</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-address">
+                        <h4>Get in Touch</h4>
+                        <a href="https://goo.gl/maps/C3Y7PobSFGY5oXCj9" target="_blank">
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span>
+                                13114 Hello Darlin Dr <br>
+                                Glen Saint Mary, FL, 32040-5136 <br>
+                                United States
+                            </span>
+                        </a>
+                        <a href="tel:9044189734" target="_blank">
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span>9044189734</span>
+                        </a>
+                        <a href="mailto:info@jacarandaconst.com" target="_blank">
+                            <span><i class="fa fa-at" aria-hidden="true"></i></span>
+                            <span>info@jacarandaconst.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                Copyright © 2021 <strong><span>JACARANDA CONST INC</span></strong>. All Rights Reserved.
+            </div>
+            <div class="credits">
+                <!-- Licensing information: https://www.cdaitsolutions.com/ -->
+                Designed by <a href="https://www.cdaitsolutions.com/">CDA IT Solutions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- carousel JS -->
+    <script src="files/js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="files/js/isotope.pkgd.min.js"></script>
+    <script src="files/js/custom.js"></script>
+    <!-- Email sender JS File -->
+    <script src="files/js/emailSender.js"></script>
+    <!-- for email send -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
